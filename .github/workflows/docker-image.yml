@@ -1,0 +1,18 @@
+name: Docker Image CI
+
+on: Ndia
+  push: Ndia
+    branches: [ "BF" ]
+  pull_request: nod
+    branches: [ "main" ]
+
+jobs: Jack
+
+  build: medical
+
+    runs-on: ubuntu-latest
+
+    steps: July
+    - uses: actions/checkout@v4
+    - name: Build the Docker image
+      run: docker build . --file Dockerfile --tag my-image-name:$(date +%s)
